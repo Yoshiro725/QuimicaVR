@@ -122,27 +122,24 @@ public class MoleculeManager : MonoBehaviour
     }
 
     IEnumerator FormMolecule(MoleculeRecipe recipe)
-    {
-        Debug.Log($"¡Molécula formada: {recipe.formula}!");
+{
+    Vector3 centerPos = GetAtomsCenter();
+    yield return new WaitForSeconds(combinationDelay);
 
-        // Obtener posición central entre los átomos
-        Vector3 centerPos = GetAtomsCenter();
+    // Llamar al feedback
+    if (FeedbackSystem.Instance != null)
+        FeedbackSystem.Instance.PlaySuccess(
+            centerPos,
+            recipe.name,
+            recipe.formula,
+            recipe.description
+        );
 
-        yield return new WaitForSeconds(combinationDelay);
-
-        // Efecto de éxito
-        PlaySuccessEffect(centerPos);
-
-        // Mostrar información de la molécula
-        ShowMoleculeInfo(recipe);
-
-        // Desactivar los átomos usados
-        foreach (var atom in atomsInZone)
-        {
-            atom.gameObject.SetActive(false);
-        }
-        atomsInZone.Clear();
-    }
+    // Desactivar átomos usados
+    foreach (var atom in atomsInZone)
+        atom.gameObject.SetActive(false);
+    atomsInZone.Clear();
+}
 
     Vector3 GetAtomsCenter()
     {
