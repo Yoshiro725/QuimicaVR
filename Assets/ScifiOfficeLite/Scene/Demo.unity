@@ -6234,7 +6234,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 1168876676}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -6291,7 +6291,6 @@ MonoBehaviour:
   panelColor: {r: 0, g: 0.05882353, b: 0.11764706, a: 0.78431374}
   buttonNormal: {r: 0, g: 0.19607843, b: 0.39215687, a: 0.23529412}
   buttonHighlight: {r: 0, g: 0.9, b: 1, a: 0.5}
-  buttonBorder: {r: 0, g: 0.8, b: 1, a: 0.9}
   titleColor: {r: 0, g: 1, b: 1, a: 1}
   subtitleColor: {r: 0.6, g: 0.9, b: 1, a: 0.7}
   floatSpeed: 0.8
@@ -8983,6 +8982,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4839168145623436652, guid: 067d8de31c79c9e409f72412c3904ccc,
+        type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 3266887667944164143, guid: 89e80c47615e4f043926d66492d3ca5f,
+        type: 3}
     - target: {fileID: 5871329852931189839, guid: 067d8de31c79c9e409f72412c3904ccc,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -8992,6 +8997,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085976430324030343, guid: 067d8de31c79c9e409f72412c3904ccc,
+        type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 1595251472046566641, guid: ffd656bf2a3ba3d41b1e4a94b81b7c85,
+        type: 3}
+    - target: {fileID: 6085976430324030343, guid: 067d8de31c79c9e409f72412c3904ccc,
+        type: 3}
+      propertyPath: m_AnimateModel
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7505063866197763168, guid: 067d8de31c79c9e409f72412c3904ccc,
         type: 3}
@@ -10998,12 +11014,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 261145358}
   m_PrefabAsset: {fileID: 0}
---- !u!20 &1168876676 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 7913656145140170809, guid: 067d8de31c79c9e409f72412c3904ccc,
-    type: 3}
-  m_PrefabInstance: {fileID: 937660779}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1169655064
 GameObject:
   m_ObjectHideFlags: 0
@@ -11093,7 +11103,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 1168876676}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -12705,7 +12715,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 1168876676}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
